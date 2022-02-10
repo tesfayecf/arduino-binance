@@ -1,6 +1,5 @@
 #ifndef M_D_E //MARKET_DATA_ENDPOINTS
 #define M_D_E
-#include <WiFiClientSecure.h> 
 #include "Request.h"
 
 #if (ARDUINO >=100)
@@ -9,28 +8,28 @@
   #include "WProgram.h"
 #endif
 
-String ping(WiFiClientSecure httpsClient);
+String ping();
 
-String serverTime(WiFiClientSecure httpsClient);
+String serverTime();
 
-String exchangeInfo(WiFiClientSecure httpsClient, String pair);
+String exchangeInfo(String pair);
 
-String depth(WiFiClientSecure httpsClient, String pair, int limit);
+String depth(String pair, int limit);
 
-String trades(WiFiClientSecure httpsClient, String pair, int limit);
+String trades(String pair, int limit);
 
-String historicalTrades(WiFiClientSecure httpsClient, String pair, int limit);
+String historicalTrades(String pair, int limit);
 
-String aggTrades(WiFiClientSecure httpsClient, String pair, int limit);
+String aggTrades(String pair, int limit);
 
-String getKlines(WiFiClientSecure httpsClient, String pair, String interval, int limit);
+String getKlines(String pair, String interval, int limit);
 
-String avgPrice(WiFiClientSecure httpsClient, String pair);
+String avgPrice(String pair);
 
-String TPC_Statistics_24hr(WiFiClientSecure httpsClient, String pair);
+String TPC_Statistics_24hr(String pair);
 
-String Symbol_Price_Ticker(WiFiClientSecure httpsClient, String pair);
+String Symbol_Price_Ticker(String pair);
 
-String Symbol_Order_Book_Ticker(WiFiClientSecure httpsClient, String pair);
+String Symbol_Order_Book_Ticker(String pair);
 
 #endif

@@ -9,6 +9,8 @@
 #endif
 
 
-String GET_Request(WiFiClientSecure httpsClient, String LINK, char* HOSTNAME = "api.binance.com");
+String GET_Request(String LINK, char* HOSTNAME = "api.binance.com", int PORT = 443);
+
+WiFiClientSecure serverConnect(char fingerprint[]);
 
 #endif
