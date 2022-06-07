@@ -14,7 +14,7 @@ const char API_SECRET[] = "";
 
 const char *HOST_NAME = "api.binance.com";
 const int HTTP_PORT = 443;  //HTTPS= 443 and HTTP = 80
-const char fingerprint[] PROGMEM = "5B 5F CA EA D0 43 FC 52 2F D9 E2 EC A0 6C A8 57 70 DB 58 F7";
+const char fingerprint[] PROGMEM = "";
 
 //Get timestamp
 #include <NTPClient.h>
