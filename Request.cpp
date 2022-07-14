@@ -2,7 +2,7 @@
 #include "Request.h"
 
 String GET_Request(String LINK, char* HOST_NAME, int PORT) {
-  char FINGERPRINT[] = "";
+  char FINGERPRINT[] = ""; //set your own fingerprint
   WiFiClientSecure httpsClient = serverConnect(FINGERPRINT);
   Serial.printf("\n[Connecting to %s ... ", HOST_NAME);
   if (httpsClient.connect(HOST_NAME, PORT)) { 
